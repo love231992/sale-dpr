@@ -1,0 +1,158 @@
+@media screen and (max-width: 600px) {
+
+    /* body,html {
+        position: relative;
+    } */
+    body,html {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .header {
+        padding: 20px 5px 20px 16px;
+    }
+    .logo h1 {
+        font-size: 1.5rem;
+        /* justify-items: center; */
+        letter-spacing: 6px;
+    }
+    .navbar {
+        position: absolute;
+        right: 00px;
+        height: 70vh;
+        top : 11.5vh;
+        align-items: end;
+        background: rgba(255,255,255,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 38%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+        
+    }
+    .navbar a {
+        color: darkred;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .navbar li {
+        opacity : 0;
+    }
+
+    .burger{
+        display: block;
+    }
+    
+    .footer-item {
+         justify-content: center;
+    }
+
+    .report {
+        flex-direction: column;
+        height: auto;
+
+    }
+    .bg {
+        margin-top: 0;
+        width: 100%;
+    }
+    .form {
+        margin-top: 0;
+        background-color: #252627;
+        width: 100%;
+    }
+    .form p {
+        margin-top: -28px;
+    }
+    .form button {
+        margin-right: 100px;
+        margin-left: 100px;
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+        border: none;
+    }
+
+    .sale {
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+
+    .tab_head {
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        text-align: start;
+        padding: 5.5px;
+    }
+
+    td, th, tr {
+        padding: 10px 10px;
+    }
+    .balance::-webkit-scrollbar-thumb, 
+    .detail::-webkit-scrollbar-thumb {
+        background:linear-gradient(0.5turn, #3f87a6, #ebf8e1, #f69d3c);
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        border-radius: 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+
+
+@media screen and (min-width: 1367px) {
+    .form,
+    .bg {
+        justify-content: space-evenly;
+        height: 564px;
+    }
+    .report {
+        margin-top: 71px;
+        height: 748px;
+    }
+    .balance, .detail {
+        height: 750px;
+    }
+    .sale {
+        margin: 25px 0 25px 0;
+    }
+}

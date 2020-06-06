@@ -1,0 +1,116 @@
+{% load static %}
+{% static "images" as baseUrl %} 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ash Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{%static 'main.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{%static 'media.css' %}" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b6673aca32.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="header">
+        <div class="logo">
+            <a href="/home"><h1>Ash Management</h1></a>
+        </div>
+        <nav>
+            <ul class="col-6 navbar">
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/sale_detail">Sales</a></li>
+                <li><a href="/dpr/dpr">report</a></li>
+                <li><a href="/admin">Customer</a></li> 
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+    </div>
+
+    
+        <div class="conatiner">
+            <div class="wrap">
+                <div class="box one">
+                    <div class="date">
+                        <!-- <h2 style="color: antiquewhite;">21-05-2020</h2> -->
+                    </div>
+                    <h1> FLY ASH SALE<br><small>{{d1}}</small></h1>
+                    <div class="poster p1">
+                        <h4>{{today_total}} MT</h4>
+                    </div>
+                </div>
+                
+                <div class="box two">
+                    <div class="date">
+                        <!-- <h4>6/29/18</h4> -->
+                    </div>
+                    <H1>POND ASH<br><small>{{yesterday}}</small></H1>
+                    <div class="poster p2">
+                        <h4>{{pond_ash}} MT</h4>
+                    </div>
+                </div>
+                
+                <div class="box three">
+                    <div class="date">
+                        <!-- <h4>6/29/18</h4> -->
+                    </div>
+                    <h1>REVENUE<br><small>{{month}}</small></h1>
+                    <div class="poster p3">
+                        <h4>{{revenue}}</h4>
+                    </div>
+                </div>
+                
+                <div class="box four">
+                    <div class="date">
+                        <!-- <h4>6/29/18</h4> -->
+                    </div>
+                    <h1>FLY ASH SALE<br><small>{{yesterday}}</small></h1>
+                    <div class="poster p4">
+                        <h4>{{yester_total}} MT</h4>
+                    </div>
+                </div>
+
+                <div class="box five">
+                    <div class="date">
+                        <!-- <h4>6/29/18</h4> -->
+                    </div>
+                    <h1>FLY ASH SALE<br><small>{{month}}</small></h1>
+                    <div class="poster p5">
+                        <h4>{{total1}} MT</h4>
+                    </div>
+                </div>
+
+                <div class="box six">
+                    <div class="date">
+                        <!-- <h4>6/29/18</h4> -->
+                    </div>
+                    <h1>FOC LIFTING <br><small>{{month}}</small></h1>
+                    <div class="poster p6">
+                        <h4>{{per}}%</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <hr>
+            <div class="footer-item">
+                <p>All Rights Reserved</p>
+                <a href="https://github.com/love231992" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="http://www.punjabsldc.org/realtimepbGen.aspx" target="_blank"><img src="{%static 'pspcl-logo.jpg' %}" alt="pspcl" width="40px"></a>
+            </div>
+        </div>
+
+
+
+    <script src="{%static 'main.js' %}"></script>
+  </body>
+</html>
